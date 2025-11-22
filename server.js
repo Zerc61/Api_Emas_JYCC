@@ -9,7 +9,8 @@ app.use(cors());
 
 app.get('/api/harga-emas', async (req, res) => {
   try {
-    const url = 'https://freegoldprice.org/api/v2?key=O9ziscf1N9O12P94LdRUO5h02B93RSZTL5jcUYajvZem3VjNJUSZBLiNoBuk&action=GSPPJ';
+    const url =
+      "https://freegoldprice.org/api/v2?key=zpYTTrghOVoNXj9UyY4ym3C0pf8qY7nrpDscotNi9KU5TsZoYRuWENYRCxPT&action=GSPPJ";
     const response = await axios.get(url);
     res.json(response.data);
   } catch (err) {
